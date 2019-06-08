@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hindu Temple of Kentucky</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin: 0;
+      border-radius: 0;
+      background-image: linear-gradient(orange, maroon);
+      color: #FFF;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border: 0;
+    }
+    .navbar-brand {
+      float: left;
+      min-height: 55px;
+      padding: 0 15px 5px;
+    }
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      opacity: 0.5;
+      border-radius: 25%;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #D5D5D5;
+    }
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+    }
+    .btn {
+      font-size: 18px;
+      color: #FFF;
+      padding: 12px 22px;
+      background: maroon;
+      border: 2px solid #FFF;
+    }
+    .container {
+      margin: 4% auto;
+    }
+    .mainbar {
+      margin: 0;
+      border-radius: 20;
+      background-color: maroon;
+      color: #FFF;
+      padding: 2% 0;
+      font-size: 1.2em;
+      height: 300px;
+     }
+     #logo {
+      max-height: 55px;
+      margin: 0 auto;
+    }
+    #icon {
+      max-width: 200px;
+      margin: 1% auto;
+    }
+    #cicon {
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+    }
+    #title {
+      color: maroon;
+      font-size: 1.7em;
+    }
+    h4 {
+        color: orange;
+    }
+    footer {
+      width: 100%;
+      background-color: maroon;
+      padding: 1%;
+      color: #FFF;
+    }
+    .fa {
+      padding: 15px;
+      font-size: 25px;
+      color: #FFF;
+    }
+    .fa:hover {
+      color: #D5D5D5;
+      text-decoration: none;
+    }
+    .link {
+      padding: 15px;
+      font-size: 15px;
+      color: #FFF;
+    }
+    .link:hover {
+      color: #D5D5D5;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .fa {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+      #icon {
+        max-width: 150px;
+      }
+      h4 {
+        font-size: 1.7em;
+        color: orange;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/htok.png"  id="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">Fees</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="contrainer text-center">
+    <h2 id="title">HINDU TEMPLE OF KENTUCKY</h2>
+    <h6>
+      4213 Accomack Drive, Louisville, KY 40241<br>
+      Ph: (502) 429-8888 | Fax: (502) 429-8829<br>
+      www.htky.org
+    </h6>
+    <div class="row">
+        <div class="col-sm-4 mainbar">
+          <h4>TODAY'S SCHEDULE</h4>
+        </div>
+        <div class="col-sm-4">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/temple.jpg" id="cicon">
+                <div class="carousel-caption">
+                  <!--
+                  <h1>Hindu Temple of Kentucky</h1>
+                  <br>
+                  <button type="button" class="btn bt-default">Know More</button>
+                  -->
+                </div> 
+              </div> <!-- end active -->
+              <div class="item">
+                <img src="img/priest.jpg" id="cicon">
+              </div>
+              <div class="item">
+                  <img src="img/annual2019.jpg" id="cicon">
+                </div>
+            </div>
+            <!--- start slider controls-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div> <!-- End Slider-->
+        </div>
+        <div class="col-sm-4 mainbar">
+          <h4>TEMPLE TIMINGS</h4>
+          <h5>
+            Week days <br>
+            09.00 A.M - 11.00 A.M <br>
+            05:30 P.M - 08:30 P.M <br>
+            <br>
+            Week Ends <br>
+            <br>
+            Saturday - <br>
+            09:00 A.M - 02:00 P.M 03:00<br> P.M - 08:30 P.M <br>
+            <br>
+            Sunday - <br>
+            09:00 A.M - 02:00 P.M  03:00<br> P.M - 08:30 P.M
+          </h5>
+        </div>
+      </div>
+  </div>
+  <div class="container">
+    <div ckass="row">
+      <div class="col-md-6">
+        <h4>Welcome to the Temple Experience !!!</h4>
+        <p>Hindu Temple of Kentucky is a place where hundreds of people come together for collective prayers each Sunday morning. The Temple’s culture is one of inclusiveness and celebrates festivals from all corners of India. Weekly schedule includes: Rudra Abhishekam, Hanuman Chalisa, Lakshmi ma puja, Ma Saraswati puja, monthly havan. </p>
+        <p>Volunteers, the soul of the temple, run the temple from Prasad committee to Finance committee and devotees are encouraged to get involved and share their talents and time. </p>
+        <p>As much as volunteers are needed, the temple is growing. Your donations, small or large, are very much appreciated and put to good use. So come to Hindu Temple of Kentucky and reacquaint yourself and family with all things Hindu. The environment will make you feel like home.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/om.png" class="img-responsive" id="icon">
+      </div>
+    </div>
+  </div>
+  <div class="contrainer text-center">
+    <!--<h2>What We're Using</h2>-->
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/events.png" id="icon">
+            <h4>Events Calendar</h4>
+          </div>
+        <div class="col-sm-4">
+          <img src="img/donate.png" id="icon">
+          <h4>Donate</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="img/360deg.png" id="icon">
+          <h4>360 Degrees Virtual Tour</h4>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div ckass="row">
+      <h4><a href="#hidden" data-toggle="collapse">Care to learn more about Hindu Temple of Kentucky?</a></h4>
+      <div id="hidden" class="collapse">
+        <h4>Here is more information !!!</h4>
+        <p>Hindu Temple of Kentucky is a place where hundreds of people come together for collective prayers each Sunday morning. The Temple’s culture is one of inclusiveness and celebrates festivals from all corners of India. Weekly schedule includes: Rudra Abhishekam, Hanuman Chalisa, Lakshmi ma puja, Ma Saraswati puja, monthly havan. </p>
+        <p>Volunteers, the soul of the temple, run the temple from Prasad committee to Finance committee and devotees are encouraged to get involved and share their talents and time. </p>
+        <p>As much as volunteers are needed, the temple is growing. Your donations, small or large, are very much appreciated and put to good use. So come to Hindu Temple of Kentucky and reacquaint yourself and family with all things Hindu. The environment will make you feel like home.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Contact Us</h4>
+        <h5>
+            4213 Accomack Drive, Louisville, KY 40241<br>
+            Ph: (502) 429-8888 | Fax: (502) 429-8829<br>
+            www.htky.org
+        </h5>
+      </div>
+      <div class="col-sm-4">
+        <h4>Connect</h4>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+      <div class="col-sm-4">
+        <h4>Copyright © Hindu Temple of Kentucky 2011-2019</h4>
+        <a href="#" class="link">Privacy Policy</a> | 
+        <a href="#" class="link">Terms of Use</a>
+        </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>
